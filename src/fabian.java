@@ -1,10 +1,10 @@
 public class fabian {
-    public static String usedChars = "";
+    public static String usedLetters = "";
     public static boolean validChar(char in){
-        if (usedChars.contains(String.valueOf(in))){
+        if (usedLetters.contains(String.valueOf(in))){
             return false;
         }else {
-            usedChars += in;
+            usedLetters += in;
             return true;
         }
     }
@@ -59,7 +59,7 @@ public class fabian {
             System.out.println("/            \\    ");
         }else if (fel == 5){
             System.out.println("       _________   ");
-            System.out.println("       |/          ");
+            System.out.println("       |           ");
             System.out.println("       |           ");
             System.out.println("       |           ");
             System.out.println("  ____/|\\___       ");
@@ -97,19 +97,40 @@ public class fabian {
             System.out.println("  __________       ");
             System.out.println(" /          \\     ");
             System.out.println("/            \\    ");
+        }else {
+            System.out.println("                   ");
+            System.out.println("                   ");
+            System.out.println("                   ");
+            System.out.println("                   ");
+            System.out.println("                   ");
+            System.out.println("                   ");
+            System.out.println("~~~~~~~~~~~~~~~~~~~");
         }
     }
+    public static String replaceLetter(String hidden, char letter){
+
+        for (int i = 0; i < Main.word.length();i++){
+            if (Main.word.charAt(i)==letter){
+
+            }
+        }
+
+    }
+
+
 }
 /*
 
 
 linus:
-void showHiddenWord()
+void showHiddenWord(){
+sout(Main.hiddenWord);
+}
 
 fabian:
 void showProgress()
 boolean validChar()
-
+String replaceLetter(String hidden, char letter)
 
 void main-main(String[] args){
 ord = något();
