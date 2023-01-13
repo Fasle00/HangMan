@@ -107,14 +107,14 @@ public class fabian {
             System.out.println("~~~~~~~~~~~~~~~~~~~");
         }
     }
-    public static String replaceLetter(String hidden, char letter){
-
+    public static void replaceLetter(char letter){
+        char[] hidden = Main.hiddenWord.toCharArray();
         for (int i = 0; i < Main.word.length();i++){
             if (Main.word.charAt(i)==letter){
-
+                hidden[i] = letter;
             }
         }
-
+        Main.hiddenWord = hidden.toString();
     }
 
 
