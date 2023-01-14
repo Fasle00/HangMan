@@ -10,12 +10,13 @@ public class Main {
         Scanner txt = new Scanner(new File("words.txt"));
         String input;
 
+
         int choseWord = (int) ((Math.random()*34)+1);
         for (int i = 0; i < choseWord; i++){
             word = txt.next();
         }
         System.out.println(word);
-
+        linus.underScores();
         int chanses = 0;
         while (chanses < 12){
             // linus.showHiddenWord();
@@ -31,6 +32,7 @@ public class Main {
                 System.out.println("try another letter");
             }
             fabian.showProgress(chanses);
+            linus.showHiddenWord(hiddenWord);
             System.out.println("Guessed letters: " + fabian.usedLetters);
         }
 

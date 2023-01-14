@@ -1,11 +1,11 @@
 public class linus {
-    public static void showHiddenWord() {
-        System.out.println(Main.hiddenWord);
+    public static void showHiddenWord(String w) {
+        System.out.println(w);
     }
 
     public static void underScores() {
-        for (int i = 0; i < Main.hiddenWord.length(); i++){
-
+        for (int i = 0; i < Main.word.length(); i++){
+            Main.hiddenWord += "_";
         }
     }
 }

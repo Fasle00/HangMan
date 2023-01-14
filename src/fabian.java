@@ -114,7 +114,7 @@ public class fabian {
                 hidden[i] = letter;
             }
         }
-        Main.hiddenWord = hidden.toString();
+        Main.hiddenWord = String.valueOf(hidden);
     }
 
 
