@@ -4,8 +4,7 @@ public class linus {
     }
 
     public static void underScores() {
-        for (int i = 0; i < Main.word.length(); i++){
-            Main.hiddenWord += "_";
-        }
+        int length = Main.word.length();
+        Main.hiddenWord = "_".repeat(length);
     }
 }

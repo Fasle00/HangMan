@@ -116,6 +116,9 @@ public class fabian {
         }
         Main.hiddenWord = String.valueOf(hidden);
     }
+    public static boolean winning(){
+        return Main.word.equals(Main.hiddenWord);
+    }
 
 
 }

@@ -18,8 +18,9 @@ public class Main {
         System.out.println(word);
         linus.underScores();
         int chanses = 0;
-        while (chanses < 12){
-            // linus.showHiddenWord();
+        while (chanses < 11){
+            linus.showHiddenWord(hiddenWord);
+            System.out.println("Guessed letters: " + fabian.usedLetters);
             System.out.print("Guess a letter: ");
             input = scanner.next();
             if (fabian.validChar(input.charAt(0))){
@@ -32,8 +33,15 @@ public class Main {
                 System.out.println("try another letter");
             }
             fabian.showProgress(chanses);
-            linus.showHiddenWord(hiddenWord);
-            System.out.println("Guessed letters: " + fabian.usedLetters);
+            if (fabian.winning()){
+                System.out.println("You won");
+                break;
+            }
+            if (chanses == 11){
+                fabian.showProgress(chanses);
+                System.out.println("You lost");
+                break;
+            }
         }
 
     }
