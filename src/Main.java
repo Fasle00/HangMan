@@ -15,7 +15,6 @@ public class Main {
         for (int i = 0; i < choseWord; i++){
             word = txt.next();
         }
-        System.out.println(word);
         linus.underScores();
         int chances = 0;
         while (chances < 11){
